@@ -4,9 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    height: 4000px;
 }
-
 
 .clearfix {
     clear: both;
@@ -395,6 +393,22 @@ body {
     }
 }
 
+@media (max-width:992px) {
+    .about-us {
+        display: block;
+        text-align: center;
+    }
+    .about-us .info {
+        padding: 0;
+    }
+    .about-us .info hr {
+        width: 100%;
+    }
+    .about-us img {
+        height: 264px;
+    }
+}
+
 .about-us .info {
     flex: 1;
     padding: 30px;
@@ -537,7 +551,7 @@ body {
     display: flex;
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .skills .flex {
         display: block;
     }
@@ -569,7 +583,7 @@ body {
     margin-bottom: 15px;
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .skills .skill-info {
         width: 100%;
         display: block !important;
@@ -584,7 +598,7 @@ body {
     padding-right: 20px;
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .skills .skill-info .skills-name {
         padding-right: 0;
         text-align: left;
@@ -619,7 +633,13 @@ body {
     width: 600px;
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
+    .skills .image-skill img {
+        width: 700px;
+    }
+}
+
+@media (max-width:769px) {
     .skills .image-skill img {
         width: 500px;
     }
@@ -686,7 +706,7 @@ body {
     margin-bottom: 40px;
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .Exp-time .Exp-content .left,
     .Exp-time .Exp-content .right {
         width: 100%;
@@ -819,12 +839,9 @@ body {
 
 .download-Re .images .download p {
     font-size: 23px;
-    /* text-align: center; */
     margin-bottom: 40px;
     font-family: monospace;
     font-weight: bold;
-    top: 30%;
-    left: 29%;
     color: var(--main-color);
 }
 
@@ -836,6 +853,15 @@ body {
     width: 100%;
     border-radius: 50px;
     color: var(--main-color);
+}
+
+@media (max-width:992px) {
+    .download-Re .images .download button {
+        left: 1%;
+    }
+    .download-Re .images .download p {
+        font-size: 18px;
+    }
 }
 
 .download-Re .images .download i {
@@ -957,6 +983,12 @@ body {
     margin: 0px 0;
 }
 
+@media (max-width:768px) {
+    .references {
+        width: 100%;
+    }
+}
+
 .references:before {
     content: '';
     position: absolute;
@@ -1004,6 +1036,26 @@ body {
     padding: 15px;
     font-size: 25px;
     margin-right: 10px;
+}
+
+@media (max-width:992px) {
+    .references .Ref-content {
+        width: calc(98% /2);
+        margin-right: 6px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:769px) {
+    .references .Ref-content {
+        width: calc(100% /1);
+        margin-bottom: 15px;
+    }
+}
+
+.download-Re .images .download p {
+    font-size: 18px;
 }
 
 .references .Ref-box h3 {
@@ -1187,15 +1239,15 @@ footer {
 
 /* Phone view */
 
-@media(max-width:576px) {
-    body {
-        width: 1170px;
+@media screen and (max-width:575px) {
+    .container {
+        max-width: 570px;
     }
 }
 
-@media(min-width:576px) {
-    body {
-        width: 1170px;
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 650px;
     }
 }
 
@@ -1205,9 +1257,9 @@ footer {
 
 /* Start Tablet view */
 
-@media(min-width:768px) and (max-width: 991px) {
-    body {
-        width: 1170px;
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 740px;
     }
 }
 
@@ -1217,29 +1269,20 @@ footer {
 
 /* Start decktop view */
 
-@media screen and (min-width:992px) and (max-width: 1199px) {
-    body {
-        width: 1170px;
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1170px;
     }
 }
 
 
 /* End decktop view */
-
-
-/* Start larg view */
-
-@media screen and (min-width:1200px) {
-    body {
-        width: 1440px;
-    }
-}
-
-@media screen and (min-width:1600px) {
-    body {
-        width: 2600px;
-    }
-}
 
 
 /* End larg view */
