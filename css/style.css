@@ -7,11 +7,6 @@ body {
     height: 4000px;
 }
 
-.container {
-    width: 1170px;
-    margin: auto;
-    padding: 0 15px;
-}
 
 .clearfix {
     clear: both;
