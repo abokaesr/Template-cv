@@ -6,6 +6,15 @@
  *  this line is very important because we want to set the local storge the save the color
  * 
  */
+// full responsive width 
+
+$(function() {
+    $(".landing-page").width($(window).width());
+    $(window).resize(function() {
+        $(".landing-page").width($(window).width());
+    });
+});
+
 
 let localColorStorge = localStorage.getItem('colorOption')
 if (localColorStorge !== null) {
